@@ -1,4 +1,4 @@
-# Regresión Lineal con Gradient Descent
+# Hands-on-Lab #5: Regresión Lineal con Gradient Descent
 
 ## Objetivo
 
@@ -232,3 +232,5 @@ significa que el dataset puede tener valores nulos, columnas con nombres diferen
 
 ---
 
+## Statement
+Utilizando el dataset California Housing de Hugging Face https://huggingface.co/datasets/gvlassis/california_housing?, desarrolla un modelo de Regresión Lineal con Gradient Descent para predecir el valor medio de las viviendas en California, considerando variables como el ingreso medio, la antigüedad de las viviendas y el número de habitaciones. Implementa el algoritmo desde cero, analiza la convergencia de la función de costo y evalúa las predicciones mediante métricas de desempeño. Finalmente, compara los resultados y explica cómo influyen los parámetros aprendidos en las predicciones.
