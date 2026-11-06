@@ -1,4 +1,4 @@
-# Hands-on-Lab #1: Regresión Lineal con Gradient Descent
+# Hands-on-Lab#1: Regresión Lineal con Gradient Descent
 
 ## Objetivo
 
