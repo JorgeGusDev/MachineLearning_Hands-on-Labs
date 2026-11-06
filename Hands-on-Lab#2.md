@@ -1,4 +1,4 @@
-# Hands-on-Labs#2: Regresión Logística con Iris Species
+# Hands-on-Lab#2: Regresión Logística con Iris Species
 
 ## Objetivo
 
