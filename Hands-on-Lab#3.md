@@ -1,4 +1,4 @@
-# Hands-on-Lab #4: Decision Trees for Classification
+# Hands-on-Lab #3: Decision Trees for Classification
 
 ## 1. Dataset
 
