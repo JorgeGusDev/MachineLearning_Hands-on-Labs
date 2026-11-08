@@ -137,9 +137,7 @@ plt.show()
 
 ---
 
-## 3. Reto individual
-
-**Enunciado:**
+## 3. Statement
 
 Utilizando el dataset **Iris**, disponible en Hugging Face (`scikit-learn/iris`), desarrolla un modelo de árbol de decisión para clasificar flores en tres especies: Setosa, Versicolor y Virginica. Realiza la exploración y preparación de los datos, el entrenamiento del modelo y su evaluación mediante métricas apropiadas. Visualiza e interpreta el árbol generado, experimenta con diferentes hiperparámetros y compara los resultados obtenidos. Finalmente, entrega un notebook Jupyter (`.ipynb`) que incluya la implementación, los resultados, las visualizaciones y una breve discusión sobre el rendimiento y la interpretabilidad del modelo.
 
