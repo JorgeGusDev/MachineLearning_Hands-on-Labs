@@ -143,9 +143,5 @@ Utilizando el dataset **Iris**, disponible en Hugging Face (`scikit-learn/iris`)
 
 **Dataset:** https://huggingface.co/datasets/scikit-learn/iris
 
-## 4. Entregables
 
-- Notebook Jupyter (`.ipynb`) que contenga la implementación completa del laboratorio y su explicación.
-- Métricas de evaluación del modelo.
-- Visualización del árbol de decisión.
 
