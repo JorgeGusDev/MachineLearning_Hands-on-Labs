@@ -1,4 +1,4 @@
-# Caso Práctico usando Python # 1
+# Exploratory Data Analysis#1
 
 ## 1. Carga del Conjunto de Datos
 
