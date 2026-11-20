@@ -1,4 +1,4 @@
-# Caso Práctico usando Python # 2
+# Exploratory Data Analysis#2
 
 ## Preprocesamiento de los Datos
 
