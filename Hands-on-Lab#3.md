@@ -134,7 +134,84 @@ plt.gca().invert_yaxis()
 plt.title("Top 10 Feature Importances")
 plt.show()
 ```
+### Step ?. RandomForest (optional)
+```python
+from sklearn.ensemble import RandomForestClassifier
 
+rf = RandomForestClassifier(
+    n_estimators=1000,
+    max_depth=4,
+    #min_samples_leaf=3,
+    random_state=42
+)
+
+rf.fit(X_train, y_train)
+
+y_pred_rf = rf.predict(X_test)
+
+print("Random Forest Accuracy:",
+      accuracy_score(y_test, y_pred_rf))
+
+print(classification_report(y_test, y_pred_rf))
+
+print(confusion_matrix(
+    y_test, y_pred_rf, labels=["B", "M"]
+))
+```
+### Step ?. LightGBM (optional)
+```python
+# Install LightGBM
+!pip install -q lightgbm
+
+from lightgbm import LGBMClassifier
+
+# Train LightGBM
+lgbm = LGBMClassifier(
+    n_estimators=1000,
+    learning_rate=0.05,
+    max_depth=4,
+    verbosity=-1,
+    random_state=42
+)
+
+lgbm.fit(X_train, y_train)
+
+# Make predictions
+y_pred_lgbm = lgbm.predict(X_test)
+
+# Evaluate LightGBM
+print("LightGBM Accuracy:",
+      accuracy_score(y_test, y_pred_lgbm))
+
+print(classification_report(y_test, y_pred_lgbm))
+
+# Compare models
+print("Decision Tree Accuracy:",
+      accuracy_score(y_test, y_pred))
+
+print("LightGBM Accuracy:",
+      accuracy_score(y_test, y_pred_lgbm))
+
+# Compare false negatives (Malignant = M)
+fn_dt = ((y_test == "M") & (y_pred == "B")).sum()
+fn_lgbm = ((y_test == "M") & (y_pred_lgbm == "B")).sum()
+
+print("Decision Tree FN:", fn_dt)
+print("LightGBM FN:", fn_lgbm)
+
+# Confusion matrix
+sns.heatmap(
+    confusion_matrix(y_test, y_pred_lgbm, labels=["B", "M"]),
+    annot=True,
+    fmt="d",
+    cmap="Blues"
+)
+
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("LightGBM Confusion Matrix")
+plt.show()
+```
 ---
 
 ## 3. Statement
